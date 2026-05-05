@@ -1,0 +1,29 @@
+.watch-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-player {
+  width: 70%;
+}
+
+.video-player video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-details {
+  margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .watch-container {
+    flex-direction: column;
+  }
+
+  .video-player {
+    width: 100%;
+  }
+}
