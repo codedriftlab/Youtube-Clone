@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import VideoPlayer from "./pages/VideoPlayer";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import Channel from "./pages/Channel";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -19,13 +20,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        {/* <Route path="/watch/:videoId" element={<Watch />} /> */}
-
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Register />} />
 
         <Route path="/video/:id" element={<VideoPlayer />} />
+
+        <Route path="/channel/:name" element={<Channel />} />
       </Routes>
     </BrowserRouter>
   );

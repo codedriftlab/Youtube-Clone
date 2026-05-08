@@ -47,6 +47,10 @@ const VideoPlayer = () => {
 
       <p style={{padding: "6px"}}>{video.description}</p>
 
+    <p style={{padding: "6px"}}>
+      {video.channelName}
+    </p>
+
       <div className="video-actions">
         <button onClick={handleLike} style={{color: "green"}}>
           <AiFillLike />

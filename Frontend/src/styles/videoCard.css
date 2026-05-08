@@ -36,3 +36,12 @@
   color: gray;
   font-size: 13px;
 }
+
+.channel-name {
+  color: gray;
+  cursor: pointer;
+}
+
+.channel-name:hover {
+  color: red;
+}
