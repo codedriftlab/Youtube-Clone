@@ -25,6 +25,11 @@ const videoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    
+    channelName: {
+      type: String,
+      required: true,
+    },
 
     views: {
       type: Number,

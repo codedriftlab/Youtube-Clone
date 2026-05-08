@@ -2,10 +2,8 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import express from "express";
 import cors from "cors";
-
 import authRoutes from "./routes/authRoutes.js";
 import videoRoutes from "./routes/videoRoutes.js";
-import commentRoutes from "./routes/commentRoutes.js";
 import channelRoutes from "./routes/channelRoutes.js";
 
 dotenv.config();
@@ -22,7 +20,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/videos", videoRoutes);
-app.use("/api/comments", commentRoutes);
 app.use("/api/channels", channelRoutes);
 
 const PORT = process.env.PORT || 4000;

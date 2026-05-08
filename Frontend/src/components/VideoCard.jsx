@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/videoCard.css";
 
 const VideoCard = ({ video }) => {
+  const navigate = useNavigate();
+
   return (
     <Link
       to={`/video/${video._id}`}
@@ -17,8 +19,17 @@ const VideoCard = ({ video }) => {
         <div className="video-info">
           <h4>{video.title}</h4>
 
-          <p>{video.category}</p>
+          {/* <p>{video.category}</p> */}
 
+<p onClick={(e) => {
+    e.preventDefault();
+
+    navigate(`/channel/${video.channelName}`);
+  }}
+  className="channel-name"
+>
+  {video.channelName}
+</p>          
           <span>{video.views} views</span>
         </div>
       </div>
