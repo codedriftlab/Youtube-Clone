@@ -36,7 +36,7 @@ const VideoPlayer = () => {
 
   return (
     <div className="player-page">
-      <video controls className="video-player">
+      <video controls autoPlay className="video-player">
         <source src={video.videoUrl} type="video/mp4" />
       </video>
 
