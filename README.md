@@ -98,7 +98,7 @@ backend/
 │   └── uploadRoutes.js
 │
 ├── config/
-│   └── cloudinary.js
+│   └── db.js
 │
 ├── .env
 ├── server.js
