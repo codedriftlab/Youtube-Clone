@@ -1,0 +1,53 @@
+.channel-page {
+  margin-left: 220px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.channel-banner {
+  height: 220px;
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #202020
+  );
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.channel-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channel-info h1 {
+  margin-bottom: 5px;
+}
+
+.channel-info p {
+  color: gray;
+}
+
+.channel-videos {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  );
+  gap: 20px;
+}

@@ -6,6 +6,8 @@ import API from "../services/api";
 
 import VideoCard from "../components/VideoCard";
 
+import "../styles/channel.css";
+
 const Channel = () => {
   const { name } = useParams();
 
@@ -19,28 +21,33 @@ const Channel = () => {
     try {
       const res = await API.get("/videos");
 
-      const filtered = res.data.filter(
+      const filteredVideos = res.data.filter(
         (video) => video.channelName === name
       );
 
-      setVideos(filtered);
+      setVideos(filteredVideos);
     } catch (error) {
       console.log(error);
     }
   };
 
   return (
-    <div
-      style={{
-        marginLeft: "220px",
-        padding: "20px",
-      }}
-    >
-      <h1>{name}</h1>
+    <div className="channel-page">
+      <div className="channel-banner"></div>
 
-      <p>{videos.length} videos</p>
+      <div className="channel-info">
+        <div className="channel-avatar">
+          {name.charAt(0)}
+        </div>
 
-      <div className="video-grid">
+        <div>
+          <h1>{name}</h1>
+
+          <p>{videos.length} videos</p>
+        </div>
+      </div>
+
+      <div className="channel-videos">
         {videos.map((video) => (
           <VideoCard
             key={video._id}
