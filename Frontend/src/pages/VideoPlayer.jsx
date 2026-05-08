@@ -43,9 +43,9 @@ const VideoPlayer = () => {
         <source src={video.videoUrl} type="video/mp4" />
       </video>
 
-      <h2>{video.title}</h2>
+      <h2 style={{padding: "8px"}}>{video.title}</h2>
 
-      <p>{video.description}</p>
+      <p style={{padding: "6px"}}>{video.description}</p>
 
       <div className="video-actions">
         <button onClick={handleLike} style={{color: "green"}}>
