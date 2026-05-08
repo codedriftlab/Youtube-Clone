@@ -56,9 +56,16 @@ const Header = ({ onToggleSidebar }) => {
         >
           <FaRegUserCircle style={{ fontSize: "24px" }} />
 
-          <span>{user.username}</span>
+          <span>{user.username} | </span>
 
-          <button onClick={handleLogout}>Logout</button>
+          <button onClick={handleLogout} style={{
+            color: "blue",
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            gap: "2px",
+            fontSize: "16px"
+          }}>Logout</button>
         </div>
       ) : (
         <Link
@@ -69,7 +76,7 @@ const Header = ({ onToggleSidebar }) => {
             display: "flex",
             alignItems: "center",
             gap: "6px",
-            fontSize: "8px"
+            fontSize: "18px"
           }}
         >
           <FaRegUserCircle style={{ fontSize: "24px" }} />
