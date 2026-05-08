@@ -32,6 +32,7 @@ YouTube clone project that mimics the look and feel of YouTube. Built with [Reac
 * Header Section
 * Category Filter Buttons
 * Search Videos by Title
+* Channel Page
 
 ## Video Player
 
@@ -49,9 +50,6 @@ YouTube clone project that mimics the look and feel of YouTube. Built with [Reac
 * Sidebar
 
 ---
-
-# Project Structure
-
 ```bash
 frontend/
 │
