@@ -18,10 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <Header onToggleSidebar={() => setIsOpen(!isOpen)} />
+          <Header onToggleSidebar={() => setIsOpen(!isOpen)} />
 
       <Sidebar isOpen={isOpen} />
-
       <div className="home">
         <div className="video-grid">
           {videos.map((video) => (

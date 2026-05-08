@@ -1,0 +1,25 @@
+.player-page {
+  padding: 20px;
+  margin-left: 220px;
+  background: #f9f9f9;
+}
+
+.video-player {
+  width: 75%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.video-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.video-actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

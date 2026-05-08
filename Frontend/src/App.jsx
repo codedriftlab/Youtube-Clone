@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Watch from "./pages/Watch";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import VideoPlayer from "./pages/VideoPlayer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/watch/:videoId" element={<Watch />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/video/:id" element={<VideoPlayer />} />
       </Routes>
     </BrowserRouter>
   );
