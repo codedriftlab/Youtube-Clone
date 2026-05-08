@@ -147,7 +147,7 @@ POST /api/auth/login
   "title": "JavaScript Tutorial",
   "description": "Learn JavaScript basics",
   "thumbnailUrl": "https://i.ytimg.com/vi/W6NZfCO5SIk/maxresdefault.jpg",
-  "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+  "videoUrl": "https://media.w3.org/2010/05/bunny/trailer.mp4",
   "category": "Programming",
   "views": 12000,
   "likes": 800,
