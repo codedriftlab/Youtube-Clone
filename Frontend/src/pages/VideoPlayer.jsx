@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../services/api";
 import "../styles/player.css";
+import { AiFillLike } from "react-icons/ai";
+import { AiFillDislike } from "react-icons/ai";
+
 
 const VideoPlayer = () => {
   const { id } = useParams();
@@ -45,12 +48,14 @@ const VideoPlayer = () => {
       <p>{video.description}</p>
 
       <div className="video-actions">
-        <button onClick={handleLike}>
-          👍 {video.likes}
+        <button onClick={handleLike} style={{color: "green"}}>
+          <AiFillLike />
+ {video.likes}
         </button>
 
-        <button onClick={handleDislike}>
-          👎 {video.dislikes}
+        <button onClick={handleDislike} style={{color: "red"}}>
+          <AiFillDislike />
+          {video.dislikes}
         </button>
       </div>
     </div>
