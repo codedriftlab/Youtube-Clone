@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Home from "./pages/Home";
-import Watch from "./pages/Watch";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import VideoPlayer from "./pages/VideoPlayer";
-
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 
@@ -21,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/watch/:videoId" element={<Watch />} />
+        {/* <Route path="/watch/:videoId" element={<Watch />} /> */}
 
         <Route path="/login" element={<Login />} />
 

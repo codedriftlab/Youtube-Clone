@@ -44,7 +44,13 @@ const Header = ({ onToggleSidebar }) => {
         </Link>
       </div>
 
-      <input type="text" placeholder="Search..." />
+      <input
+  type="text"
+  placeholder="Search..."
+  onChange={(e) => {
+    navigate(`/?search=${e.target.value}`);
+  }}
+/>
 
       {user ? (
         <div
