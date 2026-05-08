@@ -1,0 +1,12 @@
+.home {
+  margin-left: 220px;
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}

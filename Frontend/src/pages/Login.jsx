@@ -12,17 +12,27 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const res = await API.post("/auth/login", form);
-      localStorage.setItem("token", res.data.token);
-      localStorage.setItem("user", JSON.stringify(res.data.user));
-      navigate("/");
-    } catch {
-      alert("Login failed");
-    }
-  };
+  try {
+    const res = await API.post("/auth/login", form);
+
+    console.log(res.data);
+
+localStorage.setItem("token", res.data.token);
+
+localStorage.setItem(
+  "user",
+  JSON.stringify(res.data)
+);
+
+    navigate("/");
+  } catch (error) {
+    console.log(error.response?.data || error.message);
+
+    alert("Login failed");
+  }
+};
 
   return (
     <div className="auth-container">

@@ -17,14 +17,6 @@
   color: white;
 }
 
-/* VIDEO GRID */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
-  padding: 20px;
-}
-
 /* VIDEO CARD */
 .video-card {
   cursor: pointer;
